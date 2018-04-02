@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
 
   get 'post/:id/edit'
     @post = Post.find_by_id(params[:id])
-    erb :show
+    erb :edit
   end
 
 end
